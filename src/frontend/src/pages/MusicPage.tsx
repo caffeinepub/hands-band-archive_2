@@ -34,7 +34,7 @@ export default function MusicPage() {
       <SiteHeader />
       <main className="flex-1 px-6 py-12 max-w-4xl mx-auto w-full">
         <div className="section-title">MUSIC</div>
-        <p className="text-white/60 text-sm mb-8">
+        <p className="text-black/60 text-sm mb-8">
           Songs, albums, and demos from The Hand. More to come.
         </p>
 
@@ -49,13 +49,13 @@ export default function MusicPage() {
                   className={`text-xs px-2 py-0.5 border uppercase tracking-widest ${
                     r.amber
                       ? "border-amber-500/50 text-amber-500"
-                      : "border-white/30 text-white/70"
+                      : "border-black/30 text-black/70"
                   }`}
                 >
                   {r.status}
                 </span>
               </div>
-              <div className="text-white/40 text-xs mt-1">
+              <div className="text-black/40 text-xs mt-1">
                 {r.type} / {r.year} / {r.tracks}
               </div>
             </div>
@@ -64,9 +64,9 @@ export default function MusicPage() {
           {/* Placeholder card */}
           <div
             className="archive-card border-dashed"
-            style={{ borderColor: "rgba(255,255,255,0.1)" }}
+            style={{ borderColor: "rgba(0,0,0,0.1)" }}
           >
-            <div className="text-white/20 text-sm flex-1 flex items-center justify-center">
+            <div className="text-black/20 text-sm flex-1 flex items-center justify-center">
               More coming soon
             </div>
           </div>

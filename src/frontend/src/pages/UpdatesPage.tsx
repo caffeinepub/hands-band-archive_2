@@ -28,14 +28,14 @@ export default function UpdatesPage() {
 
         <div className="flex flex-col gap-6">
           {updates.map((u) => (
-            <div key={u.date} className="border-b border-white/10 pb-6">
-              <div className="text-xs text-white/40 uppercase tracking-widest mb-1">
+            <div key={u.date} className="border-b border-black/10 pb-6">
+              <div className="text-xs text-black/40 uppercase tracking-widest mb-1">
                 {u.date}
               </div>
               <div className="font-bold text-sm uppercase tracking-wide mb-1">
                 {u.title}
               </div>
-              <p className="text-sm text-white/70 leading-relaxed">{u.body}</p>
+              <p className="text-sm text-black/70 leading-relaxed">{u.body}</p>
             </div>
           ))}
         </div>

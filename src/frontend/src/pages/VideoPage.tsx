@@ -11,7 +11,7 @@ export default function VideoPage() {
           <h1 className="glitch text-3xl font-bold mb-4" data-text="THE HAND">
             THE HAND
           </h1>
-          <p className="text-white/60 text-sm mb-8">
+          <p className="text-black/60 text-sm mb-8">
             Watch The Hand live and in the studio.
           </p>
 

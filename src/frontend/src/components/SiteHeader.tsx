@@ -28,14 +28,14 @@ export default function SiteHeader() {
   const currentPath = routerState.location.pathname;
 
   return (
-    <header className="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/20">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-black/20">
       <div className="flex items-center justify-between px-6 py-3">
         {/* Left */}
         <div className="flex items-center gap-4">
           <button
             type="button"
             onClick={() => window.history.back()}
-            className="text-xs text-white/50 hover:text-white transition-colors uppercase tracking-widest"
+            className="text-xs text-black/50 hover:text-black transition-colors uppercase tracking-widest"
           >
             ← BACK
           </button>
@@ -60,12 +60,34 @@ export default function SiteHeader() {
               {link.label}
             </Link>
           ))}
+          {/* Theme switcher */}
+          <span className="mx-2 text-black/20 text-xs">|</span>
+          <a
+            href="https://hands-band-archive-light-thme-2zj.caffeine.xyz"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-ocid="nav.light_theme.link"
+            title="Light Theme"
+            className="text-xl text-black/60 hover:text-black transition-colors px-2 py-1"
+          >
+            ☀
+          </a>
+          <a
+            href="https://hands-band-archive-ra1.caffeine.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-ocid="nav.dark_theme.link"
+            title="Dark Theme"
+            className="text-xl text-black/60 hover:text-black transition-colors px-2 py-1"
+          >
+            ☾
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="md:hidden text-white/70 hover:text-white"
+          className="md:hidden text-black/70 hover:text-black"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -75,22 +97,41 @@ export default function SiteHeader() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-white/20 bg-black">
+        <div className="md:hidden border-t border-black/20 bg-white">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               data-ocid={ocidMap[link.path]}
-              className={`block px-6 py-3 text-xs uppercase tracking-widest border-b border-white/10 ${
+              className={`block px-6 py-3 text-xs uppercase tracking-widest border-b border-black/10 ${
                 currentPath === link.path
-                  ? "text-white bg-white/10"
-                  : "text-white/70 hover:text-white hover:bg-white/5"
+                  ? "text-black bg-black/10"
+                  : "text-black/70 hover:text-black hover:bg-black/5"
               }`}
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
             </Link>
           ))}
+          {/* Theme switcher — mobile */}
+          <div className="flex gap-6 px-6 py-3 border-b border-black/10">
+            <a
+              href="https://hands-band-archive-light-thme-2zj.caffeine.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base text-black/60 hover:text-black transition-colors flex items-center gap-1 uppercase tracking-widest"
+            >
+              ☀ <span className="text-xs">Light</span>
+            </a>
+            <a
+              href="https://hands-band-archive-ra1.caffeine.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base text-black/60 hover:text-black transition-colors flex items-center gap-1 uppercase tracking-widest"
+            >
+              ☾ <span className="text-xs">Dark</span>
+            </a>
+          </div>
         </div>
       )}
     </header>

@@ -13,7 +13,7 @@ export default function AboutPage() {
 
         <div className="mb-8">
           <div className="section-title">WHO WE ARE</div>
-          <p className="text-sm text-white/70 leading-relaxed">
+          <p className="text-sm text-black/70 leading-relaxed">
             The Hand is a personal band project representing its members, their
             music, and their creative collaboration. Formed in Brooklyn in 2018.
           </p>
@@ -21,7 +21,7 @@ export default function AboutPage() {
 
         <div className="mb-8">
           <div className="section-title">THE SOUND</div>
-          <p className="text-sm text-white/70 leading-relaxed">
+          <p className="text-sm text-black/70 leading-relaxed">
             Dissonant guitar work layered over motorik rhythms. Post-punk
             structures pulled apart and reassembled. The Hand carve out a
             singular sound that resists easy categorization.
@@ -30,7 +30,7 @@ export default function AboutPage() {
 
         <div className="mb-8">
           <div className="section-title">THE VISION</div>
-          <p className="text-sm text-white/70 leading-relaxed">
+          <p className="text-sm text-black/70 leading-relaxed">
             This site is the official record of The Hand — a living document of
             members, music, shows, and creative work. It grows as the band
             grows.
@@ -41,7 +41,7 @@ export default function AboutPage() {
           {["post-punk", "no-wave", "experimental"].map((tag) => (
             <span
               key={tag}
-              className="border border-white/30 px-3 py-1 text-xs uppercase tracking-widest text-white/70"
+              className="border border-black/30 px-3 py-1 text-xs uppercase tracking-widest text-black/70"
             >
               {tag}
             </span>

@@ -12,12 +12,21 @@ export default function MembersPage() {
           className="archive-card flex-row gap-6 flex"
           style={{ minHeight: 200 }}
         >
-          {/* Photo placeholder */}
+          {/* Profile Photo */}
           <div
             style={{ width: 120, height: 150, flexShrink: 0 }}
-            className="border border-white/20 bg-white/5 flex items-center justify-center text-white/20 text-xs uppercase tracking-widest"
+            className="border border-black/20 overflow-hidden"
           >
-            PHOTO
+            <img
+              src="/assets/uploads/joe-singer-portrait.dim_400x500-1.jpg"
+              alt="Joe Singer"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
+            />
           </div>
 
           {/* Content */}
@@ -26,8 +35,8 @@ export default function MembersPage() {
               <div className="font-bold text-xl uppercase tracking-wider mb-1">
                 JOE SINGER
               </div>
-              <div className="text-white/70 text-sm mb-2">Vocals / Guitar</div>
-              <p className="text-white/60 text-sm leading-relaxed">
+              <div className="text-black/70 text-sm mb-2">Vocals / Guitar</div>
+              <p className="text-black/60 text-sm leading-relaxed">
                 Joe Singer is the founding voice and creative force of The Hand.
                 Known for long silences held with confidence and movements that
                 suggest the room owes him something. His guitar work is
@@ -35,17 +44,17 @@ export default function MembersPage() {
               </p>
             </div>
             <div className="mt-4 flex items-center gap-4">
-              <span className="border border-white/30 text-xs px-2 py-0.5 uppercase tracking-widest">
+              <span className="border border-black/30 text-xs px-2 py-0.5 uppercase tracking-widest">
                 ACTIVE
               </span>
-              <span className="text-xs text-white/30 font-mono">
+              <span className="text-xs text-black/30 font-mono">
                 JOE-SINGER-001 / VOCALS-GUITAR
               </span>
             </div>
           </div>
         </div>
 
-        <p className="text-white/30 text-xs mt-8">More members to be added.</p>
+        <p className="text-black/30 text-xs mt-8">More members to be added.</p>
       </main>
       <SiteFooter />
     </div>

@@ -12,7 +12,7 @@ export default function ContactPage() {
           <div className="section-title">EMAIL</div>
           <a
             href="mailto:thehand.band@gmail.com"
-            className="text-sm text-white/70 hover:text-white underline-offset-4 hover:underline transition-colors"
+            className="text-sm text-black/70 hover:text-black underline-offset-4 hover:underline transition-colors"
           >
             thehand.band@gmail.com
           </a>
@@ -20,7 +20,7 @@ export default function ContactPage() {
 
         <div className="mb-8">
           <div className="section-title">LOCATION</div>
-          <p className="text-sm text-white/60">
+          <p className="text-sm text-black/60">
             123 Kent Ave, Brooklyn, NY 11249
           </p>
         </div>
@@ -33,14 +33,14 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               data-ocid="contact.youtube.link"
-              className="text-sm text-white/80 hover:text-white transition-colors"
+              className="text-sm text-black/80 hover:text-black transition-colors"
             >
               YOUTUBE →
             </a>
-            <span className="text-sm text-white/40 opacity-40 cursor-default">
+            <span className="text-sm text-black/40 opacity-40 cursor-default">
               INSTAGRAM (coming soon)
             </span>
-            <span className="text-sm text-white/40 opacity-40 cursor-default">
+            <span className="text-sm text-black/40 opacity-40 cursor-default">
               BANDCAMP (coming soon)
             </span>
           </div>
@@ -52,13 +52,13 @@ export default function ContactPage() {
             href="https://youtu.be/YE6fTTwyDTc?si=AAhPR_nsovovDHUP"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-white/80 hover:text-white underline-offset-4 hover:underline transition-colors break-all"
+            className="text-sm text-black/80 hover:text-black underline-offset-4 hover:underline transition-colors break-all"
           >
             https://youtu.be/YE6fTTwyDTc?si=AAhPR_nsovovDHUP
           </a>
         </div>
 
-        <p className="text-white/30 text-xs mt-8">
+        <p className="text-black/30 text-xs mt-8">
           Booking and press inquiries via email.
         </p>
       </main>

@@ -12,24 +12,11 @@ const NAV_LINKS = [
   { label: "VIDEO", path: "/video" },
 ];
 
-const QR_ART =
-  "\u2588\u2580\u2580\u2580\u2580\u2580\u2588  \u2588\u2580\u2588  \u2588\u2580\u2580\u2580\u2580\u2580\u2588\n" +
-  "\u2588 \u2588\u2588\u2588 \u2588 \u2584\u2580\u2580\u2584\u2580 \u2588 \u2588\u2588\u2588 \u2588\n" +
-  "\u2588 \u2580\u2580\u2580 \u2588 \u2588\u2584 \u2588\u2584 \u2588 \u2580\u2580\u2580 \u2588\n" +
-  "\u2580\u2580\u2580\u2580\u2580\u2580\u2580 \u2580 \u2580 \u2580 \u2580\u2580\u2580\u2580\u2580\u2580\u2580\n" +
-  "\u2588 \u2580\u2584 \u2580\u2580 \u2588 \u2580\u2588\u2588\u2584\u2584 \u2580\u2584 \u2580\u2588\n" +
-  "\u2580 \u2588  \u2580\u2584 \u2588\u2588\u2580\u2584\u2588 \u2580 \u2588  \u2580\u2584\n" +
-  "\u2580\u2580\u2580\u2580\u2580\u2580\u2580 \u2580\u2584 \u2588\u2584\u2584\u2580\u2580\u2580\u2580\u2580\u2580\u2580\n" +
-  "\u2588\u2580\u2580\u2580\u2580\u2580\u2588 \u2584\u2584\u2580\u2580 \u2584\u2588\u2580\u2580\u2580\u2580\u2580\u2588\n" +
-  "\u2588 \u2588\u2588\u2588 \u2588 \u2584\u2580  \u2588 \u2588 \u2588\u2588\u2588 \u2588\n" +
-  "\u2588 \u2580\u2580\u2580 \u2588 \u2588\u2584\u2584\u2580  \u2588 \u2580\u2580\u2580 \u2588\n" +
-  "\u2580\u2580\u2580\u2580\u2580\u2580\u2580 \u2580  \u2580  \u2580\u2580\u2580\u2580\u2580\u2580\u2580";
-
 export default function LandingPage() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
+    <div className="min-h-screen bg-white flex items-center justify-center">
       <div className="scan-lines" />
 
       <div className="flex flex-col items-center gap-6">
@@ -37,22 +24,22 @@ export default function LandingPage() {
         <Link
           to="/home"
           data-ocid="landing.qr.link"
-          style={{ width: 220, height: 220 }}
-          className="border border-white/30 flex items-center justify-center hover:border-white/60 transition-colors cursor-pointer"
+          style={{ width: 320, height: 320 }}
+          className="border border-black/20 flex items-center justify-center hover:border-black/50 transition-colors cursor-pointer overflow-hidden"
           aria-label="Go to home"
         >
-          <div className="text-center">
-            <pre className="text-white/40 text-xs leading-tight select-none">
-              {QR_ART}
-            </pre>
-          </div>
+          <img
+            src="/assets/generated/qr-main-page-grey.dim_600x600.png"
+            alt="QR code linking to main page"
+            className="w-full h-full object-cover"
+          />
         </Link>
 
         <button
           type="button"
           data-ocid="landing.open_modal_button"
           onClick={() => setModalOpen(true)}
-          className="border border-white/30 px-6 py-3 text-xs uppercase tracking-widest hover:bg-white/5 transition-colors"
+          className="border border-black/30 px-6 py-3 text-xs uppercase tracking-widest hover:bg-black/5 transition-colors"
         >
           THE HAND / SCAN OR CLICK
         </button>
@@ -62,7 +49,7 @@ export default function LandingPage() {
       {modalOpen && (
         <div
           data-ocid="landing.modal"
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-6"
+          className="fixed inset-0 bg-white/90 z-50 flex items-center justify-center p-6"
         >
           <div className="w-full max-w-sm">
             <div className="flex items-center justify-between mb-6">
@@ -71,7 +58,7 @@ export default function LandingPage() {
                 type="button"
                 data-ocid="landing.modal.close_button"
                 onClick={() => setModalOpen(false)}
-                className="text-white/50 hover:text-white transition-colors"
+                className="text-black/50 hover:text-black transition-colors"
                 aria-label="Close"
               >
                 <X size={16} />

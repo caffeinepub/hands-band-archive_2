@@ -5,33 +5,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 4%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 0 0% 100%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 55%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 96%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;
     --accent: 30 100% 42%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 0% 100%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 0 0% 0%;
     --radius: 0rem;
   }
 }
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  background: #0a0a0a;
-  color: white;
+  background: #ffffff;
+  color: black;
 }
 
 .glitch {
@@ -75,14 +75,14 @@ body {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: rgba(255,255,255,0.5);
-  border-left: 2px solid rgba(255,255,255,0.3);
+  color: rgba(0,0,0,0.5);
+  border-left: 2px solid rgba(0,0,0,0.3);
   padding-left: 0.75rem;
   margin-bottom: 2rem;
 }
 
 .archive-card {
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(0,0,0,0.15);
   padding: 1.5rem;
   min-height: 160px;
   display: flex;
@@ -90,7 +90,7 @@ body {
   transition: border-color 0.2s;
 }
 .archive-card:hover {
-  border-color: rgba(255,255,255,0.4);
+  border-color: rgba(0,0,0,0.4);
 }
 
 .nav-link {
@@ -100,19 +100,19 @@ body {
   padding: 0.35rem 0.75rem;
   border: 1px solid transparent;
   transition: all 0.2s;
-  color: rgba(255,255,255,0.7);
+  color: rgba(0,0,0,0.7);
   text-decoration: none;
   font-family: 'JetBrains Mono', monospace;
 }
 .nav-link:hover {
-  border-color: rgba(255,255,255,0.6);
-  background: rgba(255,255,255,0.05);
-  color: white;
+  border-color: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.05);
+  color: black;
 }
 .nav-link.active {
-  border-color: white;
-  background: white;
-  color: black;
+  border-color: black;
+  background: black;
+  color: white;
 }
 
 .scan-lines {

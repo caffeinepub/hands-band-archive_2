@@ -10,7 +10,7 @@ export default function HomePage() {
         <h1 className="glitch text-6xl font-bold mb-6" data-text="THE HAND">
           THE HAND
         </h1>
-        <p className="text-white/70 text-sm leading-relaxed mb-12">
+        <p className="text-black/70 text-sm leading-relaxed mb-12">
           The Hand is a personal band project that represents its members, their
           music, and their creative collaboration.
         </p>
@@ -22,12 +22,12 @@ export default function HomePage() {
             <div className="font-bold text-sm uppercase tracking-widest mb-2">
               MUSIC
             </div>
-            <p className="text-white/60 text-xs leading-relaxed flex-1">
+            <p className="text-black/60 text-xs leading-relaxed flex-1">
               Songs, albums, and demos from The Hand.
             </p>
             <Link
               to="/music"
-              className="text-xs text-white/70 hover:text-white mt-4 block transition-colors"
+              className="text-xs text-black/70 hover:text-black mt-4 block transition-colors"
             >
               VIEW →
             </Link>
@@ -36,12 +36,12 @@ export default function HomePage() {
             <div className="font-bold text-sm uppercase tracking-widest mb-2">
               MEMBERS
             </div>
-            <p className="text-white/60 text-xs leading-relaxed flex-1">
+            <p className="text-black/60 text-xs leading-relaxed flex-1">
               Meet the people behind The Hand.
             </p>
             <Link
               to="/members"
-              className="text-xs text-white/70 hover:text-white mt-4 block transition-colors"
+              className="text-xs text-black/70 hover:text-black mt-4 block transition-colors"
             >
               VIEW →
             </Link>
@@ -50,12 +50,12 @@ export default function HomePage() {
             <div className="font-bold text-sm uppercase tracking-widest mb-2">
               UPDATES
             </div>
-            <p className="text-white/60 text-xs leading-relaxed flex-1">
+            <p className="text-black/60 text-xs leading-relaxed flex-1">
               News, announcements, and new releases.
             </p>
             <Link
               to="/updates"
-              className="text-xs text-white/70 hover:text-white mt-4 block transition-colors"
+              className="text-xs text-black/70 hover:text-black mt-4 block transition-colors"
             >
               VIEW →
             </Link>
